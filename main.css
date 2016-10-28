@@ -9,6 +9,12 @@ body{
 	margin: 0;
 }
 
+.header{
+	height: 40px;
+}
+
+
+
 .grid{
   display: flex;
   flex-wrap: wrap;
@@ -42,3 +48,13 @@ body{
 	opacity: 1;
 }
 
+
+
+
+
+
+
+
+.footer{
+	height: 40px;
+}
