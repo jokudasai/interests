@@ -5,7 +5,7 @@ html, body{
 }
 
 body{
-	background-color: #fff;
+	background-color: #7FFFD4;
 	margin: 0;
 }
 
@@ -15,11 +15,49 @@ body{
 
 
 
+
+
+.tile{
+
+	height: 75px;
+	width: 75px;
+
+	text-align: center;
+	display: inline-flex;
+  	flex-direction: column;
+  	justify-content: center;
+  	flex-grow: 0;
+}
+
+
+
+
 .grid{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
+
+
+.tile h1{
+	line-height: 40px;
+	color: white;
+	font-family: Futura, Helvetica, sans-serif;
+	font-size: 24px;
+	opacity: 1;
+	text-transform: uppercase;
+	width: 75px;
+}
+
+
+.tile:hover{
+	opacity: 0;
+    transition: .1s opacity;
+}
+
+
+
+
 
 .grid-bottom{
   
@@ -32,34 +70,44 @@ body{
   z-index: -1;
 }
 
-.grid img{
-	height: 150px;
-	padding-bottom: 0;
-	width: 150px;
+
+.grid-bottom p{
+	line-height: 16px;
+	color: blue;
+	font-family: Futura, Helvetica, sans-serif;
+	font-size: 12px;
+	opacity: 1;
+	text-transform: lowercase;
 }
 
-.container{}
+.grid-bottom .tile{
+  background-color: #fff;
 
-
-.tile{
-
-	height: 150px;
-	width: 150px;
-
-	text-align: center;
-	display: inline-flex;
-  	flex-direction: column;
-  	justify-content: center;
 }
 
 
+.grid div{
+  background-color: #7FFFD4;
+}
 
+
+
+.footer{
+	height: 40px;
+}
+
+
+
+
+
+
+/*
 .tile-detail{
 	position: relative;
-	right:150px;
+	right:75px;
 
-	height: 150px;
-	width: 150px;
+	height: 75px;
+	width: 75px;
 	text-align: center;
 	display: inline-flex;
   	flex-direction: column;
@@ -67,40 +115,8 @@ body{
   	z-index: -1;
   	opacity: 1;
 }
+*/
 
 
 
 
-.tile h1{
-	line-height: 40px;
-	color: white;
-	font-family: Futura, Helvetica, sans-serif;
-	font-size: 24px;
-	opacity: 1;
-	text-transform: uppercase;
-	width: 150px;
-}
-
-
-.tile:hover{
-	opacity: 0;
-}
-
-
-
-.grid-bottom p{
-	line-height: 16px;
-	color: white;
-	font-family: Futura, Helvetica, sans-serif;
-	font-size: 12px;
-	opacity: 1;
-	text-transform: lowercase;
-}
-
-
-
-
-
-.footer{
-	height: 40px;
-}
